@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztFQUNkLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSw2QkFBNkI7QUFDL0I7O0FBRUE7O0VBRUUsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBOzs7RUFHRSxnQ0FBZ0M7RUFDaEMsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHVCQUF1QjtFQUN2QixTQUFTO0VBQ1QsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsU0FBUztFQUNULGdDQUFnQztFQUNoQyxTQUFTO0VBQ1QsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtBQUNuQjs7QUFFQTs7RUFFRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBOzs7Ozs7RUFNRSxnQkFBZ0I7RUFDaEIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTs7RUFFRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7O0VBRUUsNEJBQTRCO0FBQzlCOztBQUVBOzs7O0VBSUUsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSw0RUFBNEU7RUFDNUUsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0FBQ2Y7O0FBRUE7O0VBRUUsd0JBQXdCO0VBQ3hCLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSwwQ0FBMEM7QUFDNUM7O0FBRUE7RUFDRSw0QkFBNEI7QUFDOUI7O0FBRUE7RUFDRSxnQ0FBZ0M7QUFDbEM7O0FBRUE7RUFDRSxtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBRUE7O0VBRUUsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNkJBQTZCO0FBQy9COztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCOztBQUVBOzs7Ozs7O0VBT0UsbUJBQW1CO0VBQ25CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixTQUFTO0VBQ1QsYUFBYTtFQUNiLGNBQWM7RUFDZCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQ0FBZ0M7RUFDaEMsY0FBYztFQUNkLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLDRCQUE0QjtFQUM1QixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBOzs7Ozs7RUFNRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGdDQUFnQztFQUNoQyxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTs7RUFFRSxpQkFBaUI7QUFDbkI7O0FBRUE7Ozs7RUFJRSxnQkFBZ0I7RUFDaEIsYUFBYTtBQUNmOztBQUVBO0VBQ0Usb0JBQW9CO0FBQ3RCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsVUFBVTtBQUNaOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFVBQVU7QUFDWjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGNBQWM7RUFDZCxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7O0VBRUUseUJBQXlCO0VBQ3pCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0Qiw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxTQUFTO0VBQ1Qsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsdUJBQXVCO0VBQ3ZCLFNBQVM7RUFDVCxlQUFlO0VBQ2YsU0FBUztFQUNULFVBQVU7RUFDVixnQkFBZ0I7RUFDaEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTs7RUFFRSx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxpQkFBaUI7RUFDakIsY0FBYztFQUNkLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QixTQUFTO0VBQ1QsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixTQUFTO0VBQ1QsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtFQUNyQiw0RUFBNEU7RUFDNUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLDhCQUE4QjtFQUM5QiwrQkFBK0I7RUFDL0IsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6Qix3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLDRFQUE0RTtFQUM1RSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSwrQkFBK0I7QUFDakM7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsY0FBYztFQUNkLDRFQUE0RTtFQUM1RSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7O0VBRUUsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLDRCQUE0QjtFQUM1QixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsMEVBQTBFO0VBQzFFLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQiIsInNvdXJjZVJvb3QiOiIifQ== */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><p style="text-align: center; color: #cccccc; font-size: 12px;">
+  © 2025 PostgreSQL Course by wangbin579 – For personal learning only.<br>
+  Redistribution, resale, or unauthorized sharing is strictly prohibited.
+</p>
+
+<h1 class="atx" id="🌳-join-tree-structures-in-query-optimization"><strong>🌳 Join Tree Structures in Query Optimization</strong></h1>
+<blockquote>
+<p>Explore how PostgreSQL arranges joins across multiple tables into tree structures, the different types of join trees, and how these trees determine the sequence of join operations.</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="💡-1-why-join-trees-matter"><strong>💡 1. Why Join Trees Matter</strong></h2>
+<p>When you write a SQL query involving multiple table joins, the database has many possible ways to execute it, and the order of joins can greatly impact performance.</p>
+<ul>
+<li><p>These possibilities are represented as <strong>join trees</strong>, which show different ways tables can be combined.</p>
+</li>
+<li><p>The planner explores these trees to find the <strong>lowest-cost execution plan</strong>.</p>
+</li>
+</ul>
+<p>Understanding join trees helps developers:</p>
+<ul>
+<li><p>See why certain indexes or join methods are chosen.</p>
+</li>
+<li><p>Optimize queries by restructuring joins or adding appropriate indexes.</p>
+</li>
+<li><p>Understand the database’s limitations. For example, MySQL only supports left-deep trees, which explains why its performance may lag behind PostgreSQL in complex join scenarios.</p>
+</li>
+</ul>
+<hr>
+<h2 class="atx" id="📐-2-what-a-join-tree-is"><strong>📐 2. What a Join Tree Is</strong></h2>
+<p>A <strong>join tree</strong> is a hierarchical representation of tables and joins in a query:</p>
+<ul>
+<li><p><strong>Leaf nodes</strong> represent base tables.</p>
+</li>
+<li><p><strong>Internal nodes</strong> represent join operations (e.g., nested loop, hash join, merge join).</p>
+</li>
+<li><p><strong>Root node</strong> represents the final join result.</p>
+</li>
+</ul>
+<p><strong>Example Query:</strong></p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword">FROM</span> orders o
+<span class="token keyword">JOIN</span> customers c <span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> products p <span class="token keyword">ON</span> o<span class="token punctuation">.</span>product_id <span class="token operator">=</span> p<span class="token punctuation">.</span>id<span class="token punctuation">;</span></code></pre>
+<p>Examples of possible join trees:</p>
+<ul>
+<li><p><code>(orders JOIN customers) JOIN products</code></p>
+</li>
+<li><p><code>(orders JOIN products) JOIN customers</code></p>
+</li>
+<li><p><code>(customers JOIN products) JOIN orders</code></p>
+</li>
+</ul>
+<p>Each tree corresponds to a different <strong>execution order</strong>.</p>
+<h2 class="atx" id="🌳-3-join-tree-structures">🌳 3. Join Tree Structures</h2>
+<p>In the previous lesson, we covered three basic join tree structures. Let’s take a quick moment to review them here.</p>
+<h3 class="atx" id="31-left-deep-tree">3.1 Left-Deep Tree</h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836578" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="347.7142639160156" style="max-width: 316.17413330078125px;" viewBox="0.000003814697265625 0.0000019073486328125 316.17413330078125 347.7142639160156"><style>#mermaid-1764910836578 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836578 .error-icon{fill:#552222;}#mermaid-1764910836578 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836578 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836578 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836578 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836578 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836578 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836578 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836578 .marker.cross{stroke:#333333;}#mermaid-1764910836578 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836578 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836578 .cluster-label text{fill:#333;}#mermaid-1764910836578 .cluster-label span{color:#333;}#mermaid-1764910836578 .label text,#mermaid-1764910836578 span{fill:#333;color:#333;}#mermaid-1764910836578 .node rect,#mermaid-1764910836578 .node circle,#mermaid-1764910836578 .node ellipse,#mermaid-1764910836578 .node polygon,#mermaid-1764910836578 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836578 .node .label{text-align:center;}#mermaid-1764910836578 .node.clickable{cursor:pointer;}#mermaid-1764910836578 .arrowheadPath{fill:#333333;}#mermaid-1764910836578 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836578 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836578 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836578 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836578 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836578 .cluster text{fill:#333;}#mermaid-1764910836578 .cluster span{color:#333;}#mermaid-1764910836578 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836578 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M191.51339530944824,51.97942795483074L186.3809550603231,56.38761826130914C181.2485148111979,60.79580856778755,170.9836343129476,69.61218918074435,165.85119406382242,78.18704615388943C160.71875381469727,86.7619031270345,160.71875381469727,95.09523646036784,160.71875381469727,99.2619031270345L160.71875381469727,103.42856979370117" marker-end="url(#arrowhead2941)" style="fill:none"></path><defs><marker id="arrowhead2941" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" style="opacity: 1;" id="L-A-C"><path class="path" d="M241.0312557220459,51.97942795483074L246.16369597117105,56.38761826130914C251.29613622029623,60.79580856778755,261.56101671854657,69.61218918074435,266.6934569676717,78.18704615388943C271.8258972167969,86.7619031270345,271.8258972167969,95.09523646036784,271.8258972167969,99.2619031270345L271.8258972167969,103.42856979370117" marker-end="url(#arrowhead2942)" style="fill:none"></path><defs><marker id="arrowhead2942" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" style="opacity: 1;" id="L-B-D"><path class="path" d="M135.95982360839844,147.4310912554627L130.83742745717367,151.8354326441193C125.7150313059489,156.2397740327759,115.47023900349934,165.0484568100891,110.34784285227458,173.6194648654124C105.2254467010498,182.1904729207357,105.2254467010498,190.523806254069,105.2254467010498,194.6904729207357L105.2254467010498,198.85713958740234" marker-end="url(#arrowhead2943)" style="fill:none"></path><defs><marker id="arrowhead2943" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-E" style="opacity: 1;" id="L-B-E"><path class="path" d="M185.4776840209961,147.4310912554627L190.60008017222086,151.8354326441193C195.72247632344565,156.2397740327759,205.96726862589517,165.0484568100891,211.08966477711996,173.6194648654124C216.21206092834473,182.1904729207357,216.21206092834473,190.523806254069,216.21206092834473,194.6904729207357L216.21206092834473,198.85713958740234" marker-end="url(#arrowhead2944)" style="fill:none"></path><defs><marker id="arrowhead2944" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-F" style="opacity: 1;" id="L-D-F"><path class="path" d="M80.46651649475098,240.9173641419284L74.41554927825928,245.64542168179094C68.36458206176758,250.3734792216534,56.26264762878418,259.82959430137845,50.21168041229248,268.72431850790764C44.16071319580078,277.61904271443683,44.16071319580078,285.9523760477702,44.16071319580078,290.11904271443683L44.16071319580078,294.2857093811035" marker-end="url(#arrowhead2945)" style="fill:none"></path><defs><marker id="arrowhead2945" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-G" style="opacity: 1;" id="L-D-G"><path class="path" d="M129.98437690734863,240.9173641419284L136.03534412384033,245.64542168179094C142.08631134033203,250.3734792216534,154.18824577331543,259.82959430137845,160.23921298980713,268.72431850790764C166.29018020629883,277.61904271443683,166.29018020629883,285.9523760477702,166.29018020629883,290.11904271443683L166.29018020629883,294.2857093811035" marker-end="url(#arrowhead2946)" style="fill:none"></path><defs><marker id="arrowhead2946" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-E" class="edgeLabel L-LS-B' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-F" class="edgeLabel L-LS-D' L-LE-F"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-G" class="edgeLabel L-LS-D' L-LE-G"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-5869" transform="translate(216.27232551574707,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-5870" transform="translate(160.71875381469727,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-5872" transform="translate(271.8258972167969,126.14285469055176)"><rect rx="0" ry="0" x="-36.348215103149414" y="-22.714285850524902" width="72.69643020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.348215103149414,-12.714285850524902)"><foreignObject width="52.69643020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table D</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-5874" transform="translate(105.2254467010498,221.57142448425293)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-5876" transform="translate(216.21206092834473,221.57142448425293)"><rect rx="0" ry="0" x="-36.22768211364746" y="-22.714285850524902" width="72.45536422729492" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.22768211364746,-12.714285850524902)"><foreignObject width="52.455360412597656" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table C</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-F-5878" transform="translate(44.16071319580078,316.9999942779541)"><rect rx="0" ry="0" x="-36.160715103149414" y="-22.714285850524902" width="72.32143020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.160715103149414,-12.714285850524902)"><foreignObject width="52.32143020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table A</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-G-5880" transform="translate(166.29018020629883,316.9999942779541)"><rect rx="0" ry="0" x="-35.968753814697266" y="-22.714285850524902" width="71.93750762939453" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-25.968753814697266,-12.714285850524902)"><foreignObject width="51.937503814697266" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table B</div></foreignObject></g></g></g></g></g></g></svg></div>
+<p>This is the simplest join tree structure. Its main characteristic is that the result of each join is always joined with a base table. The MySQL community version uses this structure, and its entire join processing follows a left-deep tree architecture.</p>
+<hr>
+<h3 class="atx" id="32-right-deep-tree">3.2 Right-Deep Tree</h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836621" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="347.7142639160156" style="max-width: 315.9821472167969px;" viewBox="0.000003814697265625 0.0000019073486328125 315.9821472167969 347.7142639160156"><style>#mermaid-1764910836621 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836621 .error-icon{fill:#552222;}#mermaid-1764910836621 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836621 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836621 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836621 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836621 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836621 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836621 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836621 .marker.cross{stroke:#333333;}#mermaid-1764910836621 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836621 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836621 .cluster-label text{fill:#333;}#mermaid-1764910836621 .cluster-label span{color:#333;}#mermaid-1764910836621 .label text,#mermaid-1764910836621 span{fill:#333;color:#333;}#mermaid-1764910836621 .node rect,#mermaid-1764910836621 .node circle,#mermaid-1764910836621 .node ellipse,#mermaid-1764910836621 .node polygon,#mermaid-1764910836621 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836621 .node .label{text-align:center;}#mermaid-1764910836621 .node.clickable{cursor:pointer;}#mermaid-1764910836621 .arrowheadPath{fill:#333333;}#mermaid-1764910836621 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836621 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836621 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836621 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836621 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836621 .cluster text{fill:#333;}#mermaid-1764910836621 .cluster span{color:#333;}#mermaid-1764910836621 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836621 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M75.14285469055176,51.97942795483074L70.01041444142659,56.38761826130914C64.87797419230144,60.79580856778755,54.61309369405111,69.61218918074435,49.48065344492594,78.18704615388943C44.34821319580078,86.7619031270345,44.34821319580078,95.09523646036784,44.34821319580078,99.2619031270345L44.34821319580078,103.42856979370117" marker-end="url(#arrowhead2966)" style="fill:none"></path><defs><marker id="arrowhead2966" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-B" style="opacity: 1;" id="L-A-B"><path class="path" d="M124.66071510314941,51.97942795483074L129.79315535227457,56.38761826130914C134.92559560139975,60.79580856778755,145.19047609965006,69.61218918074435,150.32291634877524,78.18704615388943C155.4553565979004,86.7619031270345,155.4553565979004,95.09523646036784,155.4553565979004,99.2619031270345L155.4553565979004,103.42856979370117" marker-end="url(#arrowhead2967)" style="fill:none"></path><defs><marker id="arrowhead2967" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-E" style="opacity: 1;" id="L-B-E"><path class="path" d="M130.69642639160156,147.4310912554627L125.57403024037679,151.8354326441193C120.45163408915202,156.2397740327759,110.20684178670247,165.0484568100891,105.0844456354777,173.6194648654124C99.96204948425293,182.1904729207357,99.96204948425293,190.523806254069,99.96204948425293,194.6904729207357L99.96204948425293,198.85713958740234" marker-end="url(#arrowhead2968)" style="fill:none"></path><defs><marker id="arrowhead2968" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" style="opacity: 1;" id="L-B-D"><path class="path" d="M180.21428680419922,147.4310912554627L185.33668295542398,151.8354326441193C190.45907910664877,156.2397740327759,200.7038714090983,165.0484568100891,205.8262675603231,173.6194648654124C210.94866371154785,182.1904729207357,210.94866371154785,190.523806254069,210.94866371154785,194.6904729207357L210.94866371154785,198.85713958740234" marker-end="url(#arrowhead2969)" style="fill:none"></path><defs><marker id="arrowhead2969" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-F" style="opacity: 1;" id="L-D-F"><path class="path" d="M186.18973350524902,240.9173641419284L180.13876628875732,245.64542168179094C174.08779907226562,250.3734792216534,161.98586463928223,259.82959430137845,155.93489742279053,268.72431850790764C149.88393020629883,277.61904271443683,149.88393020629883,285.9523760477702,149.88393020629883,290.11904271443683L149.88393020629883,294.2857093811035" marker-end="url(#arrowhead2970)" style="fill:none"></path><defs><marker id="arrowhead2970" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-G" style="opacity: 1;" id="L-D-G"><path class="path" d="M235.70759391784668,240.9173641419284L241.75856113433838,245.64542168179094C247.80952835083008,250.3734792216534,259.9114627838135,259.82959430137845,265.9624300003052,268.72431850790764C272.0133972167969,277.61904271443683,272.0133972167969,285.9523760477702,272.0133972167969,290.11904271443683L272.0133972167969,294.2857093811035" marker-end="url(#arrowhead2971)" style="fill:none"></path><defs><marker id="arrowhead2971" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-E" class="edgeLabel L-LS-B' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-F" class="edgeLabel L-LS-D' L-LE-F"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-G" class="edgeLabel L-LS-D' L-LE-G"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-5907" transform="translate(99.90178489685059,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-5908" transform="translate(44.34821319580078,126.14285469055176)"><rect rx="0" ry="0" x="-36.348215103149414" y="-22.714285850524902" width="72.69643020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.348215103149414,-12.714285850524902)"><foreignObject width="52.69643020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table D</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-5910" transform="translate(155.4553565979004,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-5912" transform="translate(99.96204948425293,221.57142448425293)"><rect rx="0" ry="0" x="-36.22768211364746" y="-22.714285850524902" width="72.45536422729492" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.22768211364746,-12.714285850524902)"><foreignObject width="52.455360412597656" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table C</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-5914" transform="translate(210.94866371154785,221.57142448425293)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-F-5916" transform="translate(149.88393020629883,316.9999942779541)"><rect rx="0" ry="0" x="-36.160715103149414" y="-22.714285850524902" width="72.32143020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.160715103149414,-12.714285850524902)"><foreignObject width="52.32143020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table A</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-G-5918" transform="translate(272.0133972167969,316.9999942779541)"><rect rx="0" ry="0" x="-35.968753814697266" y="-22.714285850524902" width="71.93750762939453" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-25.968753814697266,-12.714285850524902)"><foreignObject width="51.937503814697266" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table B</div></foreignObject></g></g></g></g></g></g></svg></div>
+<p>Right-deep trees reverse the join order. They are less common but can be useful in certain pipelined execution scenarios.</p>
+<hr>
+<h3 class="atx" id="33-bushy-tree">3.3 Bushy Tree</h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836656" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="252.28573608398438" style="max-width: 455.4107666015625px;" viewBox="0.000003814697265625 0.0000019073486328125 455.4107666015625 252.28573608398438"><style>#mermaid-1764910836656 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836656 .error-icon{fill:#552222;}#mermaid-1764910836656 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836656 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836656 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836656 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836656 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836656 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836656 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836656 .marker.cross{stroke:#333333;}#mermaid-1764910836656 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836656 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836656 .cluster-label text{fill:#333;}#mermaid-1764910836656 .cluster-label span{color:#333;}#mermaid-1764910836656 .label text,#mermaid-1764910836656 span{fill:#333;color:#333;}#mermaid-1764910836656 .node rect,#mermaid-1764910836656 .node circle,#mermaid-1764910836656 .node ellipse,#mermaid-1764910836656 .node polygon,#mermaid-1764910836656 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836656 .node .label{text-align:center;}#mermaid-1764910836656 .node.clickable{cursor:pointer;}#mermaid-1764910836656 .arrowheadPath{fill:#333333;}#mermaid-1764910836656 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836656 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836656 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836656 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836656 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836656 .cluster text{fill:#333;}#mermaid-1764910836656 .cluster span{color:#333;}#mermaid-1764910836656 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836656 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M202.8526840209961,40.36696602481585L186.58147780100504,46.7105666529634C170.310271581014,53.054167281110956,137.7678591410319,65.74136853740606,121.49665292104085,76.25163583222029C105.2254467010498,86.7619031270345,105.2254467010498,95.09523646036784,105.2254467010498,99.2619031270345L105.2254467010498,103.42856979370117" marker-end="url(#arrowhead2987)" style="fill:none"></path><defs><marker id="arrowhead2987" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" style="opacity: 1;" id="L-A-C"><path class="path" d="M252.37054443359375,40.3846033213195L268.60454813639325,46.72526440004978C284.8385518391927,53.06592547878006,317.3065592447917,65.74724763624062,333.5405629475911,76.25457538163757C349.7745666503906,86.7619031270345,349.7745666503906,95.09523646036784,349.7745666503906,99.2619031270345L349.7745666503906,103.42856979370117" marker-end="url(#arrowhead2988)" style="fill:none"></path><defs><marker id="arrowhead2988" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" style="opacity: 1;" id="L-B-D"><path class="path" d="M80.46651649475098,145.48879434822723L74.41554927825928,150.21685188808974C68.36458206176758,154.94490942795227,56.26264762878418,164.4010245076773,50.21168041229248,173.2957487142065C44.16071319580078,182.1904729207357,44.16071319580078,190.523806254069,44.16071319580078,194.6904729207357L44.16071319580078,198.85713958740234" marker-end="url(#arrowhead2989)" style="fill:none"></path><defs><marker id="arrowhead2989" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-E" style="opacity: 1;" id="L-B-E"><path class="path" d="M129.98437690734863,145.48879434822723L136.03534412384033,150.21685188808974C142.08631134033203,154.94490942795227,154.18824577331543,164.4010245076773,160.23921298980713,173.2957487142065C166.29018020629883,182.1904729207357,166.29018020629883,190.523806254069,166.29018020629883,194.6904729207357L166.29018020629883,198.85713958740234" marker-end="url(#arrowhead2990)" style="fill:none"></path><defs><marker id="arrowhead2990" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-F" style="opacity: 1;" id="L-C-F"><path class="path" d="M325.0156364440918,145.41833504889905L318.9274667104085,150.15813580531628C312.8392969767253,154.89793656173347,300.6629575093587,164.37753807456792,294.5747877756755,173.2840054976518C288.4866180419922,182.1904729207357,288.4866180419922,190.523806254069,288.4866180419922,194.6904729207357L288.4866180419922,198.85713958740234" marker-end="url(#arrowhead2991)" style="fill:none"></path><defs><marker id="arrowhead2991" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-G" style="opacity: 1;" id="L-C-G"><path class="path" d="M374.53349685668945,145.41833504889905L380.62166659037274,150.15813580531628C386.70983632405597,154.89793656173347,398.88617579142254,164.37753807456792,404.9743455251058,173.2840054976518C411.06251525878906,182.1904729207357,411.06251525878906,190.523806254069,411.06251525878906,194.6904729207357L411.06251525878906,198.85713958740234" marker-end="url(#arrowhead2992)" style="fill:none"></path><defs><marker id="arrowhead2992" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-E" class="edgeLabel L-LS-B' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-F" class="edgeLabel L-LS-C' L-LE-F"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-G" class="edgeLabel L-LS-C' L-LE-G"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-5945" transform="translate(227.61161422729492,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-5946" transform="translate(105.2254467010498,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-5948" transform="translate(349.7745666503906,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-5950" transform="translate(44.16071319580078,221.57142448425293)"><rect rx="0" ry="0" x="-36.160715103149414" y="-22.714285850524902" width="72.32143020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.160715103149414,-12.714285850524902)"><foreignObject width="52.32143020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table A</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-5952" transform="translate(166.29018020629883,221.57142448425293)"><rect rx="0" ry="0" x="-35.968753814697266" y="-22.714285850524902" width="71.93750762939453" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-25.968753814697266,-12.714285850524902)"><foreignObject width="51.937503814697266" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table B</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-F-5954" transform="translate(288.4866180419922,221.57142448425293)"><rect rx="0" ry="0" x="-36.22768211364746" y="-22.714285850524902" width="72.45536422729492" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.22768211364746,-12.714285850524902)"><foreignObject width="52.455360412597656" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table C</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-G-5956" transform="translate(411.06251525878906,221.57142448425293)"><rect rx="0" ry="0" x="-36.348215103149414" y="-22.714285850524902" width="72.69643020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.348215103149414,-12.714285850524902)"><foreignObject width="52.69643020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table D</div></foreignObject></g></g></g></g></g></g></svg></div>
+<p>When handling joins, PostgreSQL also considers bushy trees. This allows the planner to explore more execution plans and increases the chances of finding an efficient one.</p>
+<h3 class="atx" id="34-example-query">3.4 Example Query</h3>
+<p>Here is a 4-table join with its EXPLAIN result:</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span>
+    c<span class="token punctuation">.</span>id <span class="token keyword">AS</span> customer_id<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>name <span class="token keyword">AS</span> customer_name<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>id <span class="token keyword">AS</span> order_id<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>id <span class="token keyword">AS</span> product_id<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>name <span class="token keyword">AS</span> product_name<span class="token punctuation">,</span>
+    oi<span class="token punctuation">.</span>quantity
+<span class="token keyword">FROM</span> customers c
+<span class="token keyword">JOIN</span> orders o <span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> order_items oi <span class="token keyword">ON</span> oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> o<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> products p <span class="token keyword">ON</span> p<span class="token punctuation">.</span>id <span class="token operator">=</span> oi<span class="token punctuation">.</span>product_id
+<span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>region <span class="token operator">=</span> <span class="token string">'US'</span>
+  <span class="token operator">AND</span> p<span class="token punctuation">.</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span>
+                                                     QUERY <span class="token keyword">PLAN</span>
+<span class="token comment">---------------------------------------------------------------------------------------------------------------------</span>
+ Gather  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">13584.14</span><span class="token punctuation">.</span><span class="token number">.89025</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">201840</span> width<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>
+   Workers Planned: <span class="token number">2</span>
+   <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">12584.14</span><span class="token punctuation">.</span><span class="token number">.67841</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">84100</span> width<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>
+         <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> o<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+         <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">733.80</span><span class="token punctuation">.</span><span class="token number">.54064</span><span class="token number">.35</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">420500</span> width<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span>
+               <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>oi<span class="token punctuation">.</span>product_id <span class="token operator">=</span> p<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel Seq Scan <span class="token keyword">on</span> order_items oi  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.47861</span><span class="token number">.33</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2083333</span> width<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">607.65</span><span class="token punctuation">.</span><span class="token number">.607</span><span class="token number">.65</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap Heap Scan <span class="token keyword">on</span> products p  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">114.50</span><span class="token punctuation">.</span><span class="token number">.607</span><span class="token number">.65</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                           Recheck Cond: <span class="token punctuation">(</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+                           <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap <span class="token keyword">Index</span> Scan <span class="token keyword">on</span> idx_products_category  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.111</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                                 <span class="token keyword">Index</span> Cond: <span class="token punctuation">(</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+         <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">10808.67</span><span class="token punctuation">.</span><span class="token number">.10808</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">83333</span> width<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">141.78</span><span class="token punctuation">.</span><span class="token number">.10808</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">83333</span> width<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">)</span>
+                     <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel Seq Scan <span class="token keyword">on</span> orders o  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.9572</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">416667</span> width<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">116.78</span><span class="token punctuation">.</span><span class="token number">.116</span><span class="token number">.78</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                           <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap Heap Scan <span class="token keyword">on</span> customers c  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">27.79</span><span class="token punctuation">.</span><span class="token number">.116</span><span class="token number">.78</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                                 Recheck Cond: <span class="token punctuation">(</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span>::<span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'US'</span>::<span class="token keyword">text</span><span class="token punctuation">)</span>
+                                 <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap <span class="token keyword">Index</span> Scan <span class="token keyword">on</span> idx_customers_region  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.27</span><span class="token number">.29</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                                       <span class="token keyword">Index</span> Cond: <span class="token punctuation">(</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span>::<span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'US'</span>::<span class="token keyword">text</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token number">21</span> <span class="token keyword">rows</span><span class="token punctuation">)</span></code></pre>
+<p>Based on the EXPLAIN results above, we can draw the following bushy tree structure.</p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836691" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="252.28573608398438" style="max-width: 512.4866638183594px;" viewBox="0 0.0000019073486328125 512.4866638183594 252.28573608398438"><style>#mermaid-1764910836691 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836691 .error-icon{fill:#552222;}#mermaid-1764910836691 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836691 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836691 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836691 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836691 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836691 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836691 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836691 .marker.cross{stroke:#333333;}#mermaid-1764910836691 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836691 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836691 .cluster-label text{fill:#333;}#mermaid-1764910836691 .cluster-label span{color:#333;}#mermaid-1764910836691 .label text,#mermaid-1764910836691 span{fill:#333;color:#333;}#mermaid-1764910836691 .node rect,#mermaid-1764910836691 .node circle,#mermaid-1764910836691 .node ellipse,#mermaid-1764910836691 .node polygon,#mermaid-1764910836691 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836691 .node .label{text-align:center;}#mermaid-1764910836691 .node.clickable{cursor:pointer;}#mermaid-1764910836691 .arrowheadPath{fill:#333333;}#mermaid-1764910836691 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836691 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836691 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836691 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836691 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836691 .cluster text{fill:#333;}#mermaid-1764910836691 .cluster span{color:#333;}#mermaid-1764910836691 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836691 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M215.44421768188477,47.41919624102192L201.76434326171875,52.58742516646847C188.08446884155273,57.755654091915005,160.7247200012207,68.09211194280809,147.0448455810547,77.4270075349213C133.36497116088867,86.7619031270345,133.36497116088867,95.09523646036784,133.36497116088867,99.2619031270345L133.36497116088867,103.42856979370117" marker-end="url(#arrowhead3008)" style="fill:none"></path><defs><marker id="arrowhead3008" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" style="opacity: 1;" id="L-A-C"><path class="path" d="M303.877254486084,46.46374287382107L318.834101041158,51.79121402713442C333.7909475962321,57.11868518044778,363.7046407063802,67.77362748707448,378.6614872614543,77.26776530705449C393.6183338165283,86.7619031270345,393.6183338165283,95.09523646036784,393.6183338165283,99.2619031270345L393.6183338165283,103.42856979370117" marker-end="url(#arrowhead3009)" style="fill:none"></path><defs><marker id="arrowhead3009" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" style="opacity: 1;" id="L-B-D"><path class="path" d="M99.02204457241024,148.85713958740234L92.72224125032396,153.023806254069C86.42243792823768,157.1904729207357,73.82283128406513,165.523806254069,67.52302796197885,173.85713958740234C61.22322463989258,182.1904729207357,61.22322463989258,190.523806254069,61.22322463989258,194.6904729207357L61.22322463989258,198.85713958740234" marker-end="url(#arrowhead3010)" style="fill:none"></path><defs><marker id="arrowhead3010" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-E" style="opacity: 1;" id="L-B-E"><path class="path" d="M167.7078977493671,148.85713958740234L174.0077010714534,153.023806254069C180.3075043935397,157.1904729207357,192.9071110377122,165.523806254069,199.20691435979847,173.85713958740234C205.50671768188477,182.1904729207357,205.50671768188477,190.523806254069,205.50671768188477,194.6904729207357L205.50671768188477,198.85713958740234" marker-end="url(#arrowhead3011)" style="fill:none"></path><defs><marker id="arrowhead3011" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-F" style="opacity: 1;" id="L-C-F"><path class="path" d="M362.92280661047954,148.85713958740234L357.29207552622967,153.023806254069C351.6613444419798,157.1904729207357,340.39988227348016,165.523806254069,334.7691511892303,173.85713958740234C329.13842010498047,182.1904729207357,329.13842010498047,190.523806254069,329.13842010498047,194.6904729207357L329.13842010498047,198.85713958740234" marker-end="url(#arrowhead3012)" style="fill:none"></path><defs><marker id="arrowhead3012" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-G" style="opacity: 1;" id="L-C-G"><path class="path" d="M424.3138610225771,148.85713958740234L429.944592106827,153.023806254069C435.57532319107685,157.1904729207357,446.8367853595765,165.523806254069,452.4675164438263,173.85713958740234C458.0982475280762,182.1904729207357,458.0982475280762,190.523806254069,458.0982475280762,194.6904729207357L458.0982475280762,198.85713958740234" marker-end="url(#arrowhead3013)" style="fill:none"></path><defs><marker id="arrowhead3013" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-E" class="edgeLabel L-LS-B' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-F" class="edgeLabel L-LS-C' L-LE-F"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-G" class="edgeLabel L-LS-C' L-LE-G"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-5983" transform="translate(259.6607360839844,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-44.21651840209961" y="-22.714285850524902" width="88.43303680419922" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.21651840209961,-12.714285850524902)"><foreignObject width="68.43303680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Hash Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-5984" transform="translate(133.36497116088867,126.14285469055176)"><rect rx="0" ry="0" x="-44.21651840209961" y="-22.714285850524902" width="88.43303680419922" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.21651840209961,-12.714285850524902)"><foreignObject width="68.43303680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Hash Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-5986" transform="translate(393.6183338165283,126.14285469055176)"><rect rx="0" ry="0" x="-44.21651840209961" y="-22.714285850524902" width="88.43303680419922" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.21651840209961,-12.714285850524902)"><foreignObject width="68.43303680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Hash Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-5988" transform="translate(61.22322463989258,221.57142448425293)"><rect rx="0" ry="0" x="-53.22322082519531" y="-22.714285850524902" width="106.44644165039062" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-43.22322082519531,-12.714285850524902)"><foreignObject width="86.4464340209961" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">order_items</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-5990" transform="translate(205.50671768188477,221.57142448425293)"><rect rx="0" ry="0" x="-41.06026840209961" y="-22.714285850524902" width="82.12053680419922" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-31.06026840209961,-12.714285850524902)"><foreignObject width="62.12053680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">products</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-F-5992" transform="translate(329.13842010498047,221.57142448425293)"><rect rx="0" ry="0" x="-32.57143211364746" y="-22.714285850524902" width="65.14286422729492" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-22.57143211364746,-12.714285850524902)"><foreignObject width="45.142860412597656" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">orders</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-G-5994" transform="translate(458.0982475280762,221.57142448425293)"><rect rx="0" ry="0" x="-46.38839340209961" y="-22.714285850524902" width="92.77678680419922" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-36.38839340209961,-12.714285850524902)"><foreignObject width="72.77678680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">customers</div></foreignObject></g></g></g></g></g></g></svg></div>
+<p>The PostgreSQL planner considers all possible tree shapes and selects the best plan, which corresponds to a bushy tree structure in this case.</p>
+<blockquote>
+<p>To fully support complex joins, MySQL must <strong>restructure its left-deep join planner</strong> to better support hash joins and <strong>enable exploration of bushy join trees</strong>.  Without these changes, even an advanced dynamic programming algorithm would provide <strong>only limited performance gains</strong>.</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="⚡4-join-methods-and-their-suitability-by-join-tree">⚡4. Join Methods and Their Suitability by Join Tree</h2>
+<p>Different join trees favor different join methods. Understanding this helps explain planner choices and performance implications.</p>
+<h3 class="atx" id="41-left-deep-tree"><strong>4.1 Left-Deep Tree</strong></h3>
+<ul>
+<li><p><strong>Structure:</strong> Joins form a linear chain; the <strong>right input</strong> of each join is always a base table.</p>
+</li>
+<li><p><strong>Join Method Analysis:</strong></p>
+<ul>
+<li><p><strong>Nested Loop Join:</strong> Usually highly efficient; the inner table is a base table, often indexed, allowing efficient probing.</p>
+</li>
+<li><p><strong>Merge Join:</strong> Suitable if inputs are pre-sorted or indexed; otherwise, additional sorting is needed.</p>
+</li>
+<li><p><strong>Hash Join:</strong> Possible if the inner table is small enough to fit in memory, but less common due to linear chaining.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Notes:</strong> Supports <strong>pipelined execution</strong> efficiently, minimizing materialization of intermediate results.</p>
+</li>
+</ul>
+<h3 class="atx" id="42-right-deep-tree"><strong>4.2 Right-Deep Tree</strong></h3>
+<ul>
+<li><p><strong>Structure:</strong> Joins chain from <strong>right to left</strong>; the <strong>left input</strong> of each join is always a base table.</p>
+</li>
+<li><p><strong>Join Method Analysis:</strong></p>
+<ul>
+<li><p><strong>Nested Loop Join:</strong> Works if the input is small, but usually inefficient because the right side can produce large unindexed intermediate results.</p>
+</li>
+<li><p><strong>Hash Join:</strong> Generally effective, and able to handle large intermediate results well <strong>as long as the corresponding hash tables fit in memory</strong>.</p>
+</li>
+<li><p><strong>Merge Join:</strong> Works if both inputs are sorted, though extra sorting may be required.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="atx" id="43-bushy-tree"><strong>4.3 Bushy Tree</strong></h3>
+<ul>
+<li><p><strong>Structure:</strong> Joins can be performed in <strong>any order</strong>; both sides can be complex subtrees.</p>
+</li>
+<li><p><strong>Join Method Analysis:</strong></p>
+<ul>
+<li><p><strong>Hash Join:</strong> Highly suitable; both sides may be intermediate results, and hash probing remains efficient.</p>
+</li>
+<li><p><strong>Merge Join:</strong> Suitable if inputs are sorted; may require additional sorting.</p>
+</li>
+<li><p><strong>Nested Loop Join:</strong> Usually inefficient for large intermediate results, but possible for small inputs.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Notes:</strong> Explores <strong>more join combinations</strong>, increasing the search space but potentially reducing execution cost for complex queries.</p>
+</li>
+</ul>
+<hr>
+<h2 class="atx" id="🗺️-5-how-the-planner-explores-the-search-space">🗺️ 5. How the Planner Explores the Search Space</h2>
+<p>The <strong>search space</strong> includes all join trees that PostgreSQL’s planner may consider. Let’s use the previous SQL query as an example.</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span>
+    c<span class="token punctuation">.</span>id <span class="token keyword">AS</span> customer_id<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>name <span class="token keyword">AS</span> customer_name<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>id <span class="token keyword">AS</span> order_id<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>id <span class="token keyword">AS</span> product_id<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>name <span class="token keyword">AS</span> product_name<span class="token punctuation">,</span>
+    oi<span class="token punctuation">.</span>quantity
+<span class="token keyword">FROM</span> customers c
+<span class="token keyword">JOIN</span> orders o <span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> order_items oi <span class="token keyword">ON</span> oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> o<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> products p <span class="token keyword">ON</span> p<span class="token punctuation">.</span>id <span class="token operator">=</span> oi<span class="token punctuation">.</span>product_id
+<span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>region <span class="token operator">=</span> <span class="token string">'US'</span>
+  <span class="token operator">AND</span> p<span class="token punctuation">.</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span></code></pre>
+<p>By default, PostgreSQL generates the following plan, which is a <strong>bushy join plan</strong> with a total cost of <strong>89025.98</strong>.</p>
+<pre><code class="fenced-code-block language-sql">                                                     QUERY <span class="token keyword">PLAN</span>
+<span class="token comment">---------------------------------------------------------------------------------------------------------------------</span>
+ Gather  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">13584.14</span><span class="token punctuation">.</span><span class="token number">.89025</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">201840</span> width<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>
+   Workers Planned: <span class="token number">2</span>
+   <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">12584.14</span><span class="token punctuation">.</span><span class="token number">.67841</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">84100</span> width<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>
+         <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> o<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+         <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">733.80</span><span class="token punctuation">.</span><span class="token number">.54064</span><span class="token number">.35</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">420500</span> width<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span>
+               <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>oi<span class="token punctuation">.</span>product_id <span class="token operator">=</span> p<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel Seq Scan <span class="token keyword">on</span> order_items oi  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.47861</span><span class="token number">.33</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2083333</span> width<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">607.65</span><span class="token punctuation">.</span><span class="token number">.607</span><span class="token number">.65</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap Heap Scan <span class="token keyword">on</span> products p  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">114.50</span><span class="token punctuation">.</span><span class="token number">.607</span><span class="token number">.65</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                           Recheck Cond: <span class="token punctuation">(</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+                           <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap <span class="token keyword">Index</span> Scan <span class="token keyword">on</span> idx_products_category  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.111</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                                 <span class="token keyword">Index</span> Cond: <span class="token punctuation">(</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+         <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">10808.67</span><span class="token punctuation">.</span><span class="token number">.10808</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">83333</span> width<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">141.78</span><span class="token punctuation">.</span><span class="token number">.10808</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">83333</span> width<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">)</span>
+                     <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel Seq Scan <span class="token keyword">on</span> orders o  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.9572</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">416667</span> width<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">116.78</span><span class="token punctuation">.</span><span class="token number">.116</span><span class="token number">.78</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                           <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap Heap Scan <span class="token keyword">on</span> customers c  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">27.79</span><span class="token punctuation">.</span><span class="token number">.116</span><span class="token number">.78</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                                 Recheck Cond: <span class="token punctuation">(</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span>::<span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'US'</span>::<span class="token keyword">text</span><span class="token punctuation">)</span>
+                                 <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap <span class="token keyword">Index</span> Scan <span class="token keyword">on</span> idx_customers_region  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.27</span><span class="token number">.29</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                                       <span class="token keyword">Index</span> Cond: <span class="token punctuation">(</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span>::<span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'US'</span>::<span class="token keyword">text</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token number">21</span> <span class="token keyword">rows</span><span class="token punctuation">)</span></code></pre>
+<p>After disabling bushy plan support in PostgreSQL’s source code, we got the following execution plan.</p>
+<pre><code class="fenced-code-block language-sql">                                                     QUERY <span class="token keyword">PLAN</span>
+<span class="token comment">---------------------------------------------------------------------------------------------------------------------</span>
+ Gather  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">13584.14</span><span class="token punctuation">.</span><span class="token number">.92271</span><span class="token number">.91</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">201840</span> width<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>
+   Workers Planned: <span class="token number">2</span>
+   <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">12584.14</span><span class="token punctuation">.</span><span class="token number">.71087</span><span class="token number">.91</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">84100</span> width<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>
+         <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>oi<span class="token punctuation">.</span>product_id <span class="token operator">=</span> p<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+         <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">11850.33</span><span class="token punctuation">.</span><span class="token number">.69260</span><span class="token number">.26</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">416667</span> width<span class="token operator">=</span><span class="token number">29</span><span class="token punctuation">)</span>
+               <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> o<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel Seq Scan <span class="token keyword">on</span> order_items oi  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.47861</span><span class="token number">.33</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2083333</span> width<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">10808.67</span><span class="token punctuation">.</span><span class="token number">.10808</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">83333</span> width<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span> <span class="token keyword">Join</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">141.78</span><span class="token punctuation">.</span><span class="token number">.10808</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">83333</span> width<span class="token operator">=</span><span class="token number">21</span><span class="token punctuation">)</span>
+                           <span class="token keyword">Hash</span> Cond: <span class="token punctuation">(</span>o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+                           <span class="token operator">-</span><span class="token operator">&gt;</span>  Parallel Seq Scan <span class="token keyword">on</span> orders o  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.9572</span><span class="token number">.67</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">416667</span> width<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">)</span>
+                           <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">116.78</span><span class="token punctuation">.</span><span class="token number">.116</span><span class="token number">.78</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                                 <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap Heap Scan <span class="token keyword">on</span> customers c  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">27.79</span><span class="token punctuation">.</span><span class="token number">.116</span><span class="token number">.78</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                                       Recheck Cond: <span class="token punctuation">(</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span>::<span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'US'</span>::<span class="token keyword">text</span><span class="token punctuation">)</span>
+                                       <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap <span class="token keyword">Index</span> Scan <span class="token keyword">on</span> idx_customers_region  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.27</span><span class="token number">.29</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">2000</span> width<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                                             <span class="token keyword">Index</span> Cond: <span class="token punctuation">(</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span>::<span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'US'</span>::<span class="token keyword">text</span><span class="token punctuation">)</span>
+         <span class="token operator">-</span><span class="token operator">&gt;</span>  <span class="token keyword">Hash</span>  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">607.65</span><span class="token punctuation">.</span><span class="token number">.607</span><span class="token number">.65</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+               <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap Heap Scan <span class="token keyword">on</span> products p  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">114.50</span><span class="token punctuation">.</span><span class="token number">.607</span><span class="token number">.65</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">17</span><span class="token punctuation">)</span>
+                     Recheck Cond: <span class="token punctuation">(</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+                     <span class="token operator">-</span><span class="token operator">&gt;</span>  Bitmap <span class="token keyword">Index</span> Scan <span class="token keyword">on</span> idx_products_category  <span class="token punctuation">(</span>cost<span class="token operator">=</span><span class="token number">0.00</span><span class="token punctuation">.</span><span class="token number">.111</span><span class="token number">.98</span> <span class="token keyword">rows</span><span class="token operator">=</span><span class="token number">10092</span> width<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+                           <span class="token keyword">Index</span> Cond: <span class="token punctuation">(</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span></code></pre>
+<p>The planner appears to mix left-deep and right-deep join trees, with a total estimated cost of 92,271.91. From the comparison, we can see that letting the planner consider bushy trees reduces the estimated cost to 89,025.98, showing that bushy plans can lead to better performance.</p>
+<p>Let’s look at the join tree when <strong>bushy plans are disabled</strong>. The diagram below shows a combination of <strong>left-deep</strong> and <strong>right-deep</strong> trees in PostgreSQL. PostgreSQL does not strictly follow left-deep or right-deep structures. When the root node joins its two child nodes, the <code>products</code> table and an intermediate hash join result, two possible join orders can be considered:</p>
+<ol>
+<li><p><code>products</code> joined with the intermediate hash join result</p>
+</li>
+<li><p>The intermediate hash join result joined with <code>products</code></p>
+</li>
+</ol>
+<p>Ultimately, PostgreSQL selects the second join order, joining the intermediate hash join result with <code>products</code>. This demonstrates that PostgreSQL is not limited to left-deep or right-deep tree structures.</p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836727" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="347.7142639160156" style="max-width: 327.53131103515625px;" viewBox="0 0.0000019073486328125 327.53131103515625 347.7142639160156"><style>#mermaid-1764910836727 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836727 .error-icon{fill:#552222;}#mermaid-1764910836727 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836727 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836727 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836727 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836727 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836727 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836727 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836727 .marker.cross{stroke:#333333;}#mermaid-1764910836727 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836727 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836727 .cluster-label text{fill:#333;}#mermaid-1764910836727 .cluster-label span{color:#333;}#mermaid-1764910836727 .label text,#mermaid-1764910836727 span{fill:#333;color:#333;}#mermaid-1764910836727 .node rect,#mermaid-1764910836727 .node circle,#mermaid-1764910836727 .node ellipse,#mermaid-1764910836727 .node polygon,#mermaid-1764910836727 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836727 .node .label{text-align:center;}#mermaid-1764910836727 .node.clickable{cursor:pointer;}#mermaid-1764910836727 .arrowheadPath{fill:#333333;}#mermaid-1764910836727 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836727 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836727 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836727 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836727 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836727 .cluster text{fill:#333;}#mermaid-1764910836727 .cluster span{color:#333;}#mermaid-1764910836727 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836727 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M170.38237474817194,53.42856979370117L164.47582831695806,57.595236460367836C158.56928188574418,61.76190312703451,146.75618902331644,70.09523646036784,140.84964259210255,78.42856979370117C134.94309616088867,86.7619031270345,134.94309616088867,95.09523646036784,134.94309616088867,99.2619031270345L134.94309616088867,103.42856979370117" marker-end="url(#arrowhead3033)" style="fill:none"></path><defs><marker id="arrowhead3033" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" style="opacity: 1;" id="L-A-C"><path class="path" d="M234.78060437780462,53.42856979370117L240.6871508090185,57.595236460367836C246.59369724023236,61.76190312703451,258.4067901026601,70.09523646036784,264.313336533874,78.42856979370117C270.2198829650879,86.7619031270345,270.2198829650879,95.09523646036784,270.2198829650879,99.2619031270345L270.2198829650879,103.42856979370117" marker-end="url(#arrowhead3034)" style="fill:none"></path><defs><marker id="arrowhead3034" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-E" style="opacity: 1;" id="L-B-E"><path class="path" d="M99.84890648777355,148.85713958740234L93.41129284646006,153.023806254069C86.97367920514655,157.1904729207357,74.09845192251957,165.523806254069,67.66083828120607,173.85713958740234C61.22322463989258,182.1904729207357,61.22322463989258,190.523806254069,61.22322463989258,194.6904729207357L61.22322463989258,198.85713958740234" marker-end="url(#arrowhead3035)" style="fill:none"></path><defs><marker id="arrowhead3035" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" style="opacity: 1;" id="L-B-D"><path class="path" d="M170.0372858340038,148.85713958740234L176.4748994753173,153.023806254069C182.91251311663078,157.1904729207357,195.78774039925779,165.523806254069,202.22535404057126,173.85713958740234C208.66296768188477,182.1904729207357,208.66296768188477,190.523806254069,208.66296768188477,194.6904729207357L208.66296768188477,198.85713958740234" marker-end="url(#arrowhead3036)" style="fill:none"></path><defs><marker id="arrowhead3036" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-F" style="opacity: 1;" id="L-D-F"><path class="path" d="M177.96744047583596,244.28570938110352L172.33670939158614,248.45237604777017C166.70597830733627,252.61904271443686,155.44451613883658,260.9523760477702,149.81378505458676,269.2857093811035C144.1830539703369,277.61904271443683,144.1830539703369,285.9523760477702,144.1830539703369,290.11904271443683L144.1830539703369,294.2857093811035" marker-end="url(#arrowhead3037)" style="fill:none"></path><defs><marker id="arrowhead3037" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-G" style="opacity: 1;" id="L-D-G"><path class="path" d="M239.35849488793357,244.28570938110352L244.9892259721834,248.45237604777017C250.61995705643326,252.61904271443686,261.8814192249329,260.9523760477702,267.5121503091828,269.2857093811035C273.1428813934326,277.61904271443683,273.1428813934326,285.9523760477702,273.1428813934326,290.11904271443683L273.1428813934326,294.2857093811035" marker-end="url(#arrowhead3038)" style="fill:none"></path><defs><marker id="arrowhead3038" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-E" class="edgeLabel L-LS-B' L-LE-E"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-F" class="edgeLabel L-LS-D' L-LE-F"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-G" class="edgeLabel L-LS-D' L-LE-G"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-6021" transform="translate(202.58148956298828,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-44.21651840209961" y="-22.714285850524902" width="88.43303680419922" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.21651840209961,-12.714285850524902)"><foreignObject width="68.43303680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Hash Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-6022" transform="translate(134.94309616088867,126.14285469055176)"><rect rx="0" ry="0" x="-44.21651840209961" y="-22.714285850524902" width="88.43303680419922" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.21651840209961,-12.714285850524902)"><foreignObject width="68.43303680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Hash Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-C-6024" transform="translate(270.2198829650879,126.14285469055176)"><rect rx="0" ry="0" x="-41.06026840209961" y="-22.714285850524902" width="82.12053680419922" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-31.06026840209961,-12.714285850524902)"><foreignObject width="62.12053680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">products</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-6026" transform="translate(61.22322463989258,221.57142448425293)"><rect rx="0" ry="0" x="-53.22322082519531" y="-22.714285850524902" width="106.44644165039062" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-43.22322082519531,-12.714285850524902)"><foreignObject width="86.4464340209961" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">order_items</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-D-6028" transform="translate(208.66296768188477,221.57142448425293)"><rect rx="0" ry="0" x="-44.21651840209961" y="-22.714285850524902" width="88.43303680419922" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.21651840209961,-12.714285850524902)"><foreignObject width="68.43303680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Hash Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-F-6030" transform="translate(144.1830539703369,316.9999942779541)"><rect rx="0" ry="0" x="-32.57143211364746" y="-22.714285850524902" width="65.14286422729492" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-22.57143211364746,-12.714285850524902)"><foreignObject width="45.142860412597656" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">orders</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-G-6032" transform="translate(273.1428813934326,316.9999942779541)"><rect rx="0" ry="0" x="-46.38839340209961" y="-22.714285850524902" width="92.77678680419922" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-36.38839340209961,-12.714285850524902)"><foreignObject width="72.77678680419922" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">customers</div></foreignObject></g></g></g></g></g></g></svg></div>
+<hr>
+<h2 class="atx" id="🎯-6-practical-implications-for-developers"><strong>🎯 6. Practical Implications for Developers</strong></h2>
+<ol>
+<li><p><strong>Query restructuring:</strong> Rewriting joins in a different order may help the planner explore more efficient paths.</p>
+</li>
+<li><p><strong>Indexing:</strong> Proper indexes reduce scan costs and make certain join trees more favorable.</p>
+</li>
+<li><p><strong>Analyze tables:</strong> Keeping table statistics up to date improves cost estimation and join tree selection.</p>
+</li>
+</ol>
+<p>For complex join queries, breaking the query into smaller subqueries may reduce the search space and help the planner make better decisions.</p>
+<hr>
+<h2 class="atx" id="📊-7-counting-different-types-of-join-trees">📊 7. Counting different types of join trees</h2>
+<p>To track join tree shapes when evaluating join paths, we categorize sub-join tree structures as follows:</p>
+<p> <strong>Left-Deep Tree</strong></p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836766" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="156.85714721679688" style="max-width: 187.83929443359375px;" viewBox="0.000003814697265625 0.0000019073486328125 187.83929443359375 156.85714721679688"><style>#mermaid-1764910836766 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836766 .error-icon{fill:#552222;}#mermaid-1764910836766 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836766 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836766 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836766 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836766 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836766 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836766 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836766 .marker.cross{stroke:#333333;}#mermaid-1764910836766 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836766 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836766 .cluster-label text{fill:#333;}#mermaid-1764910836766 .cluster-label span{color:#333;}#mermaid-1764910836766 .label text,#mermaid-1764910836766 span{fill:#333;color:#333;}#mermaid-1764910836766 .node rect,#mermaid-1764910836766 .node circle,#mermaid-1764910836766 .node ellipse,#mermaid-1764910836766 .node polygon,#mermaid-1764910836766 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836766 .node .label{text-align:center;}#mermaid-1764910836766 .node.clickable{cursor:pointer;}#mermaid-1764910836766 .arrowheadPath{fill:#333333;}#mermaid-1764910836766 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836766 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836766 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836766 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836766 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836766 .cluster text{fill:#333;}#mermaid-1764910836766 .cluster span{color:#333;}#mermaid-1764910836766 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836766 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M63.459821701049805,52.01537482772968L58.343006451924644,56.41757398872493C53.22619120279948,60.819773149720184,42.992560704549156,69.62417147171068,37.87574545542399,78.19303729937259C32.75893020629883,86.7619031270345,32.75893020629883,95.09523646036784,32.75893020629883,99.2619031270345L32.75893020629883,103.42856979370117" marker-end="url(#arrowhead3046)" style="fill:none"></path><defs><marker id="arrowhead3046" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-E" style="opacity: 1;" id="L-A-E"><path class="path" d="M112.97768211364746,52.01537482772968L118.09449736277263,56.41757398872493C123.21131261189778,60.819773149720184,133.4449431101481,69.62417147171068,138.56175835927328,78.19303729937259C143.67857360839844,86.7619031270345,143.67857360839844,95.09523646036784,143.67857360839844,99.2619031270345L143.67857360839844,103.42856979370117" marker-end="url(#arrowhead3047)" style="fill:none"></path><defs><marker id="arrowhead3047" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-E" class="edgeLabel L-LS-A' L-LE-E"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-6047" transform="translate(88.21875190734863,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-6048" transform="translate(32.75893020629883,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-6050" transform="translate(143.67857360839844,126.14285469055176)"><rect rx="0" ry="0" x="-36.160715103149414" y="-22.714285850524902" width="72.32143020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.160715103149414,-12.714285850524902)"><foreignObject width="52.32143020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table A</div></foreignObject></g></g></g></g></g></g></svg></div>
+<p><strong>Right-Deep Tree</strong></p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836786" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="156.85714721679688" style="max-width: 187.83929443359375px;" viewBox="0.000003814697265625 0.0000019073486328125 187.83929443359375 156.85714721679688"><style>#mermaid-1764910836786 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836786 .error-icon{fill:#552222;}#mermaid-1764910836786 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836786 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836786 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836786 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836786 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836786 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836786 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836786 .marker.cross{stroke:#333333;}#mermaid-1764910836786 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836786 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836786 .cluster-label text{fill:#333;}#mermaid-1764910836786 .cluster-label span{color:#333;}#mermaid-1764910836786 .label text,#mermaid-1764910836786 span{fill:#333;color:#333;}#mermaid-1764910836786 .node rect,#mermaid-1764910836786 .node circle,#mermaid-1764910836786 .node ellipse,#mermaid-1764910836786 .node polygon,#mermaid-1764910836786 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836786 .node .label{text-align:center;}#mermaid-1764910836786 .node.clickable{cursor:pointer;}#mermaid-1764910836786 .arrowheadPath{fill:#333333;}#mermaid-1764910836786 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836786 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836786 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836786 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836786 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836786 .cluster text{fill:#333;}#mermaid-1764910836786 .cluster span{color:#333;}#mermaid-1764910836786 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836786 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M74.86160469055176,52.01537482772968L69.74478944142659,56.41757398872493C64.62797419230144,60.819773149720184,54.39434369405111,69.62417147171068,49.27752844492594,78.19303729937259C44.16071319580078,86.7619031270345,44.16071319580078,95.09523646036784,44.16071319580078,99.2619031270345L44.16071319580078,103.42856979370117" marker-end="url(#arrowhead3055)" style="fill:none"></path><defs><marker id="arrowhead3055" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-E" style="opacity: 1;" id="L-A-E"><path class="path" d="M124.37946510314941,52.01537482772968L129.49628035227457,56.41757398872493C134.61309560139975,60.819773149720184,144.84672609965006,69.62417147171068,149.96354134877524,78.19303729937259C155.0803565979004,86.7619031270345,155.0803565979004,95.09523646036784,155.0803565979004,99.2619031270345L155.0803565979004,103.42856979370117" marker-end="url(#arrowhead3056)" style="fill:none"></path><defs><marker id="arrowhead3056" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-E" class="edgeLabel L-LS-A' L-LE-E"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-6061" transform="translate(99.62053489685059,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-6062" transform="translate(44.16071319580078,126.14285469055176)"><rect rx="0" ry="0" x="-36.160715103149414" y="-22.714285850524902" width="72.32143020629883" height="45.428571701049805" class="label-container" style="fill:#fff3e0;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-26.160715103149414,-12.714285850524902)"><foreignObject width="52.32143020629883" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Table A</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-6064" transform="translate(155.0803565979004,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g></g></g></g></svg></div>
+<p><strong>Bushy Tree</strong></p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1764910836807" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="156.85714721679688" style="max-width: 165.03573608398438px;" viewBox="0.000003814697265625 0.0000019073486328125 165.03573608398438 156.85714721679688"><style>#mermaid-1764910836807 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1764910836807 .error-icon{fill:#552222;}#mermaid-1764910836807 .error-text{fill:#552222;stroke:#552222;}#mermaid-1764910836807 .edge-thickness-normal{stroke-width:2px;}#mermaid-1764910836807 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1764910836807 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1764910836807 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1764910836807 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1764910836807 .marker{fill:#333333;stroke:#333333;}#mermaid-1764910836807 .marker.cross{stroke:#333333;}#mermaid-1764910836807 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1764910836807 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1764910836807 .cluster-label text{fill:#333;}#mermaid-1764910836807 .cluster-label span{color:#333;}#mermaid-1764910836807 .label text,#mermaid-1764910836807 span{fill:#333;color:#333;}#mermaid-1764910836807 .node rect,#mermaid-1764910836807 .node circle,#mermaid-1764910836807 .node ellipse,#mermaid-1764910836807 .node polygon,#mermaid-1764910836807 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1764910836807 .node .label{text-align:center;}#mermaid-1764910836807 .node.clickable{cursor:pointer;}#mermaid-1764910836807 .arrowheadPath{fill:#333333;}#mermaid-1764910836807 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1764910836807 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1764910836807 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1764910836807 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1764910836807 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1764910836807 .cluster text{fill:#333;}#mermaid-1764910836807 .cluster span{color:#333;}#mermaid-1764910836807 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1764910836807 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M58.83022641972232,53.42856979370117L54.485010384151735,57.595236460367836C50.139794348581155,61.76190312703451,41.449362277439995,70.09523646036784,37.10414624186941,78.42856979370117C32.75893020629883,86.7619031270345,32.75893020629883,95.09523646036784,32.75893020629883,99.2619031270345L32.75893020629883,103.42856979370117" marker-end="url(#arrowhead3064)" style="fill:none"></path><defs><marker id="arrowhead3064" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-E" style="opacity: 1;" id="L-A-E"><path class="path" d="M106.20549440547299,53.42856979370117L110.55071044104358,57.595236460367836C114.89592647661415,61.76190312703451,123.58635854775532,70.09523646036784,127.93157458332591,78.42856979370117C132.27679061889648,86.7619031270345,132.27679061889648,95.09523646036784,132.27679061889648,99.2619031270345L132.27679061889648,103.42856979370117" marker-end="url(#arrowhead3065)" style="fill:none"></path><defs><marker id="arrowhead3065" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-E" class="edgeLabel L-LS-A' L-LE-E"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-6075" transform="translate(82.51786041259766,30.714284896850586)" style="opacity: 1;"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-B-6076" transform="translate(32.75893020629883,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-E-6078" transform="translate(132.27679061889648,126.14285469055176)"><rect rx="0" ry="0" x="-24.758930206298828" y="-22.714285850524902" width="49.517860412597656" height="45.428571701049805" class="label-container" style="fill:#e8f5e8;"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.758930206298828,-12.714285850524902)"><foreignObject width="29.517858505249023" height="25.428571701049805"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Join</div></foreignObject></g></g></g></g></g></g></svg></div>
+<blockquote>
+<p>We redefine them here only to track statistics.</p>
+</blockquote>
+<p>With this classification, we can <strong>track how many left-deep, right-deep, and bushy join trees</strong> the planner considers when evaluating paths for a given join query.</p>
+<p>Let's use the same SQL as an example.</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span>
+    c<span class="token punctuation">.</span>id <span class="token keyword">AS</span> customer_id<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>name <span class="token keyword">AS</span> customer_name<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>id <span class="token keyword">AS</span> order_id<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>id <span class="token keyword">AS</span> product_id<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>name <span class="token keyword">AS</span> product_name<span class="token punctuation">,</span>
+    oi<span class="token punctuation">.</span>quantity
+<span class="token keyword">FROM</span> customers c
+<span class="token keyword">JOIN</span> orders o <span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> order_items oi <span class="token keyword">ON</span> oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> o<span class="token punctuation">.</span>id
+<span class="token keyword">JOIN</span> products p <span class="token keyword">ON</span> p<span class="token punctuation">.</span>id <span class="token operator">=</span> oi<span class="token punctuation">.</span>product_id
+<span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>region <span class="token operator">=</span> <span class="token string">'US'</span>
+  <span class="token operator">AND</span> p<span class="token punctuation">.</span>category_id <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span></code></pre>
+<p>For the join above, which involves only four tables, we tracked the types of sub-joins considered during path analysis:</p>
+<ul>
+<li><p><strong>Bushy trees:</strong> 0</p>
+</li>
+<li><p><strong>Left-deep trees:</strong> 104</p>
+</li>
+<li><p><strong>Right-deep trees:</strong> 76</p>
+</li>
+</ul>
+<p>What happens when we increase the number of tables? Let’s examine a join involving 16 tables to see how the statistics change.</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span> c<span class="token punctuation">.</span>custkey<span class="token punctuation">,</span> c<span class="token punctuation">.</span>name<span class="token punctuation">,</span> n<span class="token punctuation">.</span>name <span class="token keyword">AS</span> nation<span class="token punctuation">,</span> r<span class="token punctuation">.</span>name <span class="token keyword">AS</span> region<span class="token punctuation">,</span>
+       o<span class="token punctuation">.</span>orderkey<span class="token punctuation">,</span> o<span class="token punctuation">.</span>orderdate<span class="token punctuation">,</span> l<span class="token punctuation">.</span>partkey<span class="token punctuation">,</span> p<span class="token punctuation">.</span>name <span class="token keyword">AS</span> part_name<span class="token punctuation">,</span>
+       pc<span class="token punctuation">.</span>name <span class="token keyword">AS</span> category<span class="token punctuation">,</span> s<span class="token punctuation">.</span>name <span class="token keyword">AS</span> supplier_name<span class="token punctuation">,</span> sh<span class="token punctuation">.</span>ship_date<span class="token punctuation">,</span>
+       car<span class="token punctuation">.</span>name <span class="token keyword">AS</span> carrier<span class="token punctuation">,</span> w<span class="token punctuation">.</span>location <span class="token keyword">AS</span> warehouse<span class="token punctuation">,</span> d<span class="token punctuation">.</span>name <span class="token keyword">AS</span> dept<span class="token punctuation">,</span>
+       e<span class="token punctuation">.</span>name <span class="token keyword">AS</span> employee<span class="token punctuation">,</span> pr<span class="token punctuation">.</span>discount<span class="token punctuation">,</span> tx<span class="token punctuation">.</span>amount
+<span class="token keyword">FROM</span> customers c
+<span class="token keyword">JOIN</span> orders o      <span class="token keyword">ON</span> c<span class="token punctuation">.</span>custkey <span class="token operator">=</span> o<span class="token punctuation">.</span>custkey
+<span class="token keyword">JOIN</span> lineitems l   <span class="token keyword">ON</span> o<span class="token punctuation">.</span>orderkey <span class="token operator">=</span> l<span class="token punctuation">.</span>orderkey
+<span class="token keyword">JOIN</span> parts p       <span class="token keyword">ON</span> l<span class="token punctuation">.</span>partkey <span class="token operator">=</span> p<span class="token punctuation">.</span>partkey
+<span class="token keyword">JOIN</span> part_categories pc <span class="token keyword">ON</span> p<span class="token punctuation">.</span>category_id <span class="token operator">=</span> pc<span class="token punctuation">.</span>category_id
+<span class="token keyword">JOIN</span> suppliers s   <span class="token keyword">ON</span> l<span class="token punctuation">.</span>suppkey <span class="token operator">=</span> s<span class="token punctuation">.</span>suppkey
+<span class="token keyword">JOIN</span> shipments sh  <span class="token keyword">ON</span> l<span class="token punctuation">.</span>ship_id <span class="token operator">=</span> sh<span class="token punctuation">.</span>ship_id
+<span class="token keyword">JOIN</span> carriers car  <span class="token keyword">ON</span> sh<span class="token punctuation">.</span>carrier_id <span class="token operator">=</span> car<span class="token punctuation">.</span>carrier_id
+<span class="token keyword">JOIN</span> warehouses w  <span class="token keyword">ON</span> l<span class="token punctuation">.</span>warehouse_id <span class="token operator">=</span> w<span class="token punctuation">.</span>warehouse_id
+<span class="token keyword">JOIN</span> nation n      <span class="token keyword">ON</span> c<span class="token punctuation">.</span>nationkey <span class="token operator">=</span> n<span class="token punctuation">.</span>nationkey
+<span class="token keyword">JOIN</span> region r      <span class="token keyword">ON</span> n<span class="token punctuation">.</span>regionkey <span class="token operator">=</span> r<span class="token punctuation">.</span>regionkey
+<span class="token keyword">JOIN</span> accounts a    <span class="token keyword">ON</span> c<span class="token punctuation">.</span>custkey <span class="token operator">=</span> a<span class="token punctuation">.</span>custkey
+<span class="token keyword">JOIN</span> <span class="token keyword">transactions</span> tx <span class="token keyword">ON</span> a<span class="token punctuation">.</span>account_id <span class="token operator">=</span> tx<span class="token punctuation">.</span>account_id
+<span class="token keyword">JOIN</span> promotions pr <span class="token keyword">ON</span> p<span class="token punctuation">.</span>partkey <span class="token operator">=</span> pr<span class="token punctuation">.</span>partkey
+<span class="token keyword">JOIN</span> employees e   <span class="token keyword">ON</span> e<span class="token punctuation">.</span>emp_id <span class="token operator">=</span> <span class="token punctuation">(</span>l<span class="token punctuation">.</span>lineitem_id <span class="token operator">%</span> <span class="token number">5000</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token keyword">JOIN</span> departments d <span class="token keyword">ON</span> e<span class="token punctuation">.</span>dept_id <span class="token operator">=</span> d<span class="token punctuation">.</span>dept_id
+<span class="token keyword">WHERE</span> r<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'ASIA'</span>
+  <span class="token operator">AND</span> p<span class="token punctuation">.</span><span class="token keyword">type</span> <span class="token operator">=</span> <span class="token string">'STEEL'</span>
+  <span class="token operator">AND</span> o<span class="token punctuation">.</span>orderdate <span class="token operator">BETWEEN</span> <span class="token keyword">DATE</span> <span class="token string">'2024-01-01'</span> <span class="token operator">AND</span> <span class="token keyword">DATE</span> <span class="token string">'2024-12-31'</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li><p><strong>Bushy trees:</strong> 219,339</p>
+</li>
+<li><p><strong>Left-sided trees:</strong> 275,876</p>
+</li>
+<li><p><strong>Right-sided trees:</strong> 92,849</p>
+</li>
+</ul>
+<p>As the number of joined tables increases, the planner is more likely to generate bushy trees for sub-joins. Bushy trees depend heavily on hash joins, which may explain why MySQL often falls behind PostgreSQL when handling complex joins.</p>
+<hr>
+<h2 class="atx" id="🔑-8-summary"><strong>🔑 8. Summary</strong></h2>
+<ul>
+<li><p>Different <strong>join tree types</strong> and <strong>join methods</strong> correspond closely to underlying data structures and algorithms.</p>
+</li>
+<li><p>For the planner, it needs to fully explore every type of join tree to avoid missing potentially better execution plans.</p>
+</li>
+<li><p>Understanding join trees helps developers see why <strong>PostgreSQL is so powerful</strong> and why <strong>MySQL’s join performance</strong> can be much lower</p>
+</li>
+</ul>
+</article>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9aaf01097efa0b75","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"5070e21320304a1ba2b0a42ce9682840"}' crossorigin="anonymous"></script>
+</body>
+</html>
